@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 const fs =require('fs');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
+const { resolve } = require('path');
+const { cpuUsage } = require('process');
 // TODO: Create an array of questions for user input
 const questions = [
     
@@ -40,7 +42,7 @@ const questions = [
 
            {
              type: 'input',
-             name:  'installation',
+             name:  'Installation',
              message: 'Can you give a Good Explanation on how to install and Please Provide a picture. Make a images folder in util',
              validate : installInput => {
                   if(installInput) {
@@ -93,17 +95,18 @@ const questions = [
               
 
             } 
-        },       {
-            type:'list',
-            name: 'license',
-            message: 'Which license will you like to choose from the following',
-            validate:   => {
-                  if () {
+        },   
+        
+        {
+            type:'input',
+            name: 'usage',
+            message: 'Please provide instructions and examples to use (this is required',
+            validate: usageInput  => {
+                  if (usageInput) {
                     return true;
-
                   }
                   else {
-                     console.log ()
+                     console.log ("Please type them the examples")
                      return false;
 
                   }
@@ -111,33 +114,16 @@ const questions = [
 
             } 
         },       {
-            type:'',
-            name: '',
-            message: '',
-            validate:   => {
-                  if () {
+            type:'input',
+            name: 'Questions',
+            message: 'Please Provide What you can improve on',
+            validate:  questionsInput => {
+                  if (questionsInput) {
                     return true;
 
                   }
                   else {
-                     console.log ()
-                     return false;
-
-                  }
-              
-
-            } 
-        },       {
-            type:'',
-            name: '',
-            message: '',
-            validate:   => {
-                  if () {
-                    return true;
-
-                  }
-                  else {
-                     console.log ()
+                     console.log ("Please enter your questions!")
                      return false;
 
                   }
@@ -153,35 +139,37 @@ const questions = [
 
 // TODO: Create a function to write README file
 const writeFile = fileContent => {
-    return new Promise((resolve,reject)) => {
+    return new Promise((resolve,reject) => {
            fs.writeFile('./dist/your-README.md',filecontent, err => {
-                 
+                 if (err) {
+                    reject(err);
+                    return;
 
+                 }
 
+                 resolve({
 
+                    ok: true,
+                    message: "Your File has been made!"
+                 });
 
-
-
-           })
+                });
+              
+              });
+        };
       
 
-    }
-
-
-
-
-
-
-
-
-}
-
 // TODO: Create a function to initialize app
-function init() {
-return inquirer.prompt
+const init = () =>{
+
+
+
+  return inquirer.prompt(questions)
+   .then(readmeData =>{
+        return readmeData;
+
+   })
   
-
-
 }
 
 // Function call to initialize app
