@@ -29,8 +29,7 @@ function generateMarkdown(data) {
 
    
   ## [Questions] (#Table-of-Contents)
-   ${data.questions
-  }
+   ${data.Questions}
    ## [Github and other links] (#Table-of-Contents) 
      
    Thank you for looking at my page please contact me with the posted links below thank you
