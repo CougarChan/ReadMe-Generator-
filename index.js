@@ -1,17 +1,14 @@
 // TODO: Include packages needed for this application
-const fs =require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
-const { resolve } = require('path');
-const { cpuUsage } = require('process');
+const generateMarkdown = require('./utils/generateMarkdown');
+const fs =require('fs');
 // TODO: Create an array of questions for user input
 const questions = [
-    
-    { 
+     { 
       type: 'input',
       name: 'title',
       message:  "What is the name of your project? (This is required)",
-      validate: (titleInput) => {
+      validate: titleInput => {
           if (titleInput) {
               return true;
           }
@@ -127,20 +124,16 @@ const questions = [
                      return false;
 
                   }
-              
 
             } 
-        },
-
-
-
+        }
 
 ];
 
 // TODO: Create a function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve,reject) => {
-           fs.writeFile('./dist/your-README.md',filecontent, err => {
+           fs.writeFile('./dist/your-README.md',fileContent, err => {
                  if (err) {
                     reject(err);
                     return;
@@ -160,17 +153,14 @@ const writeFile = fileContent => {
       
 
 // TODO: Create a function to initialize app
-const init = () =>{
-
-
+const init = () => {
 
   return inquirer.prompt(questions)
-   .then(readmeData =>{
-        return readmeData;
-
-   })
-  
+  .then(readmeData => {
+      return readmeData;
+  })
 }
+
 
 // Function call to initialize app
 init()
@@ -181,8 +171,8 @@ init()
 .then(pageMD => {
    return writeFile(pageMD);
 })
-then(writeFileResponse => {
- console.log(writeFileResponse.message)
+.then(writeFileResponse => {
+ console.log(writeFileResponse.message);
 
 })
 
