@@ -28,12 +28,8 @@
 
   ## [Usage](#table-of-contents)
 
-  how>
-  
-  For more information on how to add screenshots for examples, visit the following website:
-  
-  [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
-  
+  Heres a video showing its usage
+  https://drive.google.com/file/d/1bjPs213gGmhzVR7Jg9vro5HHIJOjT4ZF/view
   
   ## [License](#table-of-contents)
 
