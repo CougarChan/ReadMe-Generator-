@@ -6,7 +6,7 @@ function generateMarkdown(data) {
   ## Table-of-Contents
   - [Description](#description)
   - [Installation](#installation)
-  - [User Contact](#User-Contact)
+  - [User-Contact](#User-Contact)
   - [Usage] (#Usage)
   - [Questions] (#Questions)
   - 
@@ -20,14 +20,17 @@ function generateMarkdown(data) {
   ## [Installation] (#Table-of-Contents)
   ${data.install}
 
-  ## [User Contact] (#Table-of-Contents)
+  ## [User-Contact] (#Table-of-Contents)
   ${data.Email}
   ${data.Username}
 
   ## [Usage] (#Table-of-Contents)
    ${data.usage}
 
-
+   
+  ## [Questions] (#Table-of-Contents)
+   ${data.questions
+  }
    ## [Github and other links] (#Table-of-Contents) 
      
    Thank you for looking at my page please contact me with the posted links below thank you
