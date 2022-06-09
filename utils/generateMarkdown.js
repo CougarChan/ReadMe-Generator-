@@ -36,7 +36,7 @@ function generateMarkdown(data) {
    Thank you for looking at my page please contact me with the posted links below thank you
 
    [Github] (https://github.com/${data.Username})
-   [Email: ${data.email}
+   [Email: ${data.Email}
 
 
 `;
