@@ -24,8 +24,17 @@ function generateMarkdown(data) {
   ${data.Email}
   ${data.Username}
 
-  [Usage] (#Table-of-Contents)
+  ## [Usage] (#Table-of-Contents)
    ${data.usage}
+
+
+   ## [Github and other links] (#Table-of-Contents) 
+     
+   Thank you for looking at my page please contact me with the posted links below thank you
+
+   [Github] (https://github.com/${data.Username})
+   [Email: ${data.email}
+
 
 `;
 }

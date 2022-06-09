@@ -173,5 +173,23 @@ const init = () =>{
 }
 
 // Function call to initialize app
-init();
+init()
+.then(readmeData => {
+  console.log(readmeData);
+  return generateMarkdown(readmeData);
+})
+.then(pageMD => {
+   return writeFile(pageMD);
+})
+then(writeFileResponse => {
+ console.log(writeFileResponse.message)
+
+})
+
+.catch(err =>{
+
+  console.log(err);
+})
+
+
 
