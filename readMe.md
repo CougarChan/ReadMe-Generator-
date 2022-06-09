@@ -6,10 +6,7 @@
   - [User-Contact](#User-Contact)
   - [Usage] (#Usage)
   - [Questions] (#Questions)
-  - 
-  -
-  -
-  
+
   ## [Description] (#Table-of-Contents)
   ReadME Generator
   undefined
