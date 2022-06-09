@@ -10,24 +10,24 @@
   -
   -
   
-  ## [Description] (#Table-of-Contents)
+  ## [Description] 
   ReadME Generator
   undefined
 
-  ## [Installation] (#Table-of-Contents)
+  ## [Installation] 
   undefined
 
-  ## [User-Contact] (#Table-of-Contents)
+  ## [User-Contact] 
   gohan0136@gmail.com
   CougarChan
 
-  ## [Usage] (#Table-of-Contents)
+  ## [Usage] 
    of course
 
    
   ## [Questions] 
    so much more
-   ## [Github and other links] (#Table-of-Contents) 
+   ## [Github and other links] 
      
    Thank you for looking at my page please contact me with the posted links below thank you
 
