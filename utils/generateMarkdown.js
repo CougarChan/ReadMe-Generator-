@@ -9,28 +9,25 @@ function generateMarkdown(data) {
   - [User-Contact](#User-Contact)
   - [Usage] (#Usage)
   - [Questions] (#Questions)
-  - 
-  -
-  -
-  
-  ## [Description] (#Table-of-Contents)
+
+  ## [Description] 
   ${data.title}
   ${data.Project}
 
-  ## [Installation] (#Table-of-Contents)
+  ## [Installation] 
   ${data.install}
 
-  ## [User-Contact] (#Table-of-Contents)
+  ## [User-Contact] 
   ${data.Email}
   ${data.Username}
 
-  ## [Usage] (#Table-of-Contents)
+  ## [Usage] 
    ${data.usage}
 
    
-  ## [Questions] (#Table-of-Contents)
+  ## [Questions] 
    ${data.Questions}
-   ## [Github and other links] (#Table-of-Contents) 
+   ## [Github and other links]  
      
    Thank you for looking at my page please contact me with the posted links below thank you
 

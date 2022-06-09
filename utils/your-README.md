@@ -25,7 +25,7 @@
    of course
 
    
-  ## [Questions] (#Table-of-Contents)
+  ## [Questions] 
    so much more
    ## [Github and other links] (#Table-of-Contents) 
      
