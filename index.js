@@ -133,7 +133,7 @@ const questions = [
 // TODO: Create a function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve,reject) => {
-           fs.writeFile('./dist/your-README.md',fileContent, err => {
+           fs.writeFile('./Gener/your-README.md',fileContent, err => {
                  if (err) {
                     reject(err);
                     return;
