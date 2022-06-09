@@ -23,7 +23,7 @@ const questions = [
         { 
           type:'input',
           name: 'Description of your Project',
-          message: 'Can you please write down what your project is',
+          message: 'Can you please write down what your project is about',
           validate : ProjectInput => {
             if (ProjectInput) {
                 return true;
@@ -97,7 +97,7 @@ const questions = [
         {
             type:'input',
             name: 'usage',
-            message: 'Please provide instructions and examples to use (this is required',
+            message: 'Please provide instructions and examples to use this in another situation(this is required',
             validate: usageInput  => {
                   if (usageInput) {
                     return true;
